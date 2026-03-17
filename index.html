@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Statement</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 2.2rem;
+        }
+
+        p {
+            line-height: 1.7;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            color: #e0e0e0;
+        }
+
+        .highlight {
+            color: #ffd369;
+            font-weight: 500;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #ffd369;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media(max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🚀 Problem Statement</h1>
+
+        <p>
+            Entrepreneurs often start businesses without <span class="highlight">reliable local market data</span>, 
+            leading to oversaturated markets and high failure rates.
+        </p>
+
+        <p>
+            Most small business owners rely on <span class="highlight">assumptions or trends</span> instead of 
+            real demand analysis when choosing a business. This results in too many similar businesses 
+            in the same area, while other essential services remain unavailable.
+        </p>
+
+        <div class="card">
+            <h3>⚠️ Key Issue</h3>
+            <p>
+                There is no simple system available to analyze <span class="highlight">local business density</span> 
+                and <span class="highlight">demand patterns</span> to guide entrepreneurs effectively.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💡 Opportunity</h3>
+            <p>
+                An intelligent <span class="highlight">opportunity-gap analysis system</span> can identify 
+                underserved business sectors in a specific locality and help entrepreneurs make 
+                data-driven decisions.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
