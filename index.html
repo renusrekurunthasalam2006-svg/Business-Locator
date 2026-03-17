@@ -3,128 +3,344 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problem Statement</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 900px;
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 20px;
-            backdrop-filter: blur(15px);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-            animation: fadeIn 1.2s ease-in-out;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-weight: 600;
-            font-size: 2.2rem;
-        }
-
-        p {
-            line-height: 1.7;
-            margin-bottom: 15px;
-            font-size: 1rem;
-            color: #e0e0e0;
-        }
-
-        .highlight {
-            color: #ffd369;
-            font-weight: 500;
-        }
-
-        .card {
-            background: rgba(255,255,255,0.1);
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 15px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-            color: #ffd369;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media(max-width: 600px) {
-            .container {
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 1.6rem;
-            }
-        }
-    </style>
+    <title>Smart Business Opportunity Analyzer</title>
+    <!-- Modern Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-        <h1>🚀 Problem Statement</h1>
+    <!-- Navbar -->
+    <nav class="navbar glass">
+        <div class="logo">
+            <i class="ph ph-chart-polar"></i>
+            <span>BizAnalyzer</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#problem">The Gap</a>
+            <a href="#analysis">Dashboard</a>
+            <a href="#recommendations">Recommendations</a>
+            <a href="#signin-modal" class="btn-primary btn-small">Sign In</a>
+        </div>
+    </nav>
 
-        <p>
-            Entrepreneurs often start businesses without <span class="highlight">reliable local market data</span>, 
-            leading to oversaturated markets and high failure rates.
-        </p>
+    <!-- 1. Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="badge">
+                <i class="ph ph-sparkle"></i> AI-Powered Market Insights
+            </div>
+            <h1>Find the <span class="text-gradient">Best Business</span> Opportunity in Your Area</h1>
+            <p class="subtitle">Our intelligent platform performs deep market gap analysis to help entrepreneurs identify underserved sectors, avoid oversaturated markets, and launch with confidence.</p>
+            <div class="hero-cta">
+                <a href="#analysis" class="btn-primary">
+                    Analyze Location <i class="ph ph-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual glass-card hover-float">
+            <div class="dashboard-mockup">
+                <div class="mockup-header">
+                    <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                </div>
+                <div class="mockup-body">
+                    <div class="mockup-row">
+                        <div class="mockup-circle"></div>
+                        <div class="mockup-lines">
+                            <div class="line w-long"></div>
+                            <div class="line w-short"></div>
+                        </div>
+                    </div>
+                    <div class="mockup-chart">
+                        <div class="bar h-tall purple-gradient-bg"></div>
+                        <div class="bar h-short blue-gradient-bg"></div>
+                        <div class="bar h-med purple-gradient-bg"></div>
+                        <div class="bar h-tall blue-gradient-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <p>
-            Most small business owners rely on <span class="highlight">assumptions or trends</span> instead of 
-            real demand analysis when choosing a business. This results in too many similar businesses 
-            in the same area, while other essential services remain unavailable.
-        </p>
-
-        <div class="card">
-            <h3>⚠️ Key Issue</h3>
-            <p>
-                There is no simple system available to analyze <span class="highlight">local business density</span> 
-                and <span class="highlight">demand patterns</span> to guide entrepreneurs effectively.
-            </p>
+    <!-- 2 & 3. Problem Statement & Key Issue Card -->
+    <section id="problem" class="container align-center">
+        <div class="section-header">
+            <h2>The <span class="text-gradient">Problem</span></h2>
+            <p>Why most new local businesses struggle to survive</p>
         </div>
 
-        <div class="card">
-            <h3>💡 Opportunity</h3>
-            <p>
-                An intelligent <span class="highlight">opportunity-gap analysis system</span> can identify 
-                underserved business sectors in a specific locality and help entrepreneurs make 
-                data-driven decisions.
-            </p>
+        <div class="problem-grid">
+            <div class="problem-cards">
+                <div class="problem-item glass-card hover-float">
+                    <div class="icon-box red-gradient-bg"><i class="ph ph-mask-sad"></i></div>
+                    <div class="item-text">
+                        <h3>Operating on Assumptions</h3>
+                        <p>Entrepreneurs are forced to rely on gut feelings rather than <strong>real local market data</strong>.</p>
+                    </div>
+                </div>
+                <div class="problem-item glass-card hover-float">
+                    <div class="icon-box orange-gradient-bg"><i class="ph ph-storefront"></i></div>
+                    <div class="item-text">
+                        <h3>Oversaturated Markets</h3>
+                        <p>Opening businesses in areas that already have <strong>too much competition</strong> leads to failure.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Issue Card -->
+            <div class="key-issue-card glass-card premium-glass">
+                <div class="issue-icon"><i class="ph ph-warning-circle"></i></div>
+                <h3>The Core Issue</h3>
+                <p>"No simple system exists to analyze local business density and demand patterns, forcing founders to fly blind."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Opportunity Section -->
+    <section id="opportunity" class="container">
+        <div class="opportunity-card text-center purple-gradient-bg glass">
+            <h2>The <span class="text-highlight">Opportunity Gap</span> Protocol</h2>
+            <p>Our opportunity gap analysis system helps identify underserved business sectors by comparing local demand against existing competition. Start where you are needed most.</p>
+            <div class="stats-row">
+                <div class="stat">
+                    <h3>Real-time</h3>
+                    <p>Density Heatmaps</p>
+                </div>
+                <div class="stat">
+                    <h3>A.I.</h3>
+                    <p>Demand Prediction</p>
+                </div>
+                <div class="stat">
+                    <h3>90%</h3>
+                    <p>Success Rate Boost</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Analysis Dashboard UI -->
+    <section id="analysis" class="dashboard-wrapper container">
+        <div class="section-header">
+            <h2>Market Analysis <span class="text-gradient">Dashboard</span></h2>
+            <p>Interactive tool to explore your local market potential</p>
+        </div>
+
+        <div class="dashboard-ui glass">
+            <!-- Sidebar Controls -->
+            <div class="dash-sidebar glass-card">
+                <div class="input-group">
+                    <label>📍 Evaluate Location</label>
+                    <div class="input-wrapper">
+                        <i class="ph ph-map-pin"></i>
+                        <input type="text" placeholder="e.g., Downtown, San Francisco" value="Downtown Area">
+                    </div>
+                </div>
+                <div class="filters-row">
+                    <div class="input-group">
+                        <label>📂 Category</label>
+                        <select>
+                            <option>All Categories</option>
+                            <option>Retail</option>
+                            <option>Healthcare</option>
+                            <option>Food & Bev</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>💰 Budget Range</label>
+                        <select>
+                            <option>$50k - $100k</option>
+                            <option>$10k - $50k</option>
+                            <option>$100k+</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn-primary w-full mt-1">Run Analysis</button>
+            </div>
+
+            <!-- Main Dashboard Panel -->
+            <div class="dash-main">
+                <!-- KPI Cards -->
+                <div class="dashboard-kpis">
+                    <div class="kpi-card glass-card">
+                        <div class="kpi-icon blue-gradient-bg"><i class="ph ph-buildings"></i></div>
+                        <div>
+                            <h4>Business Density</h4>
+                            <h2>Medium</h2>
+                        </div>
+                    </div>
+                    <div class="kpi-card glass-card">
+                        <div class="kpi-icon green-gradient-bg"><i class="ph ph-users"></i></div>
+                        <div>
+                            <h4>Demand Level</h4>
+                            <h2>High</h2>
+                        </div>
+                    </div>
+                    <div class="kpi-card glass-card">
+                        <div class="kpi-icon purple-gradient-bg"><i class="ph ph-lightbulb"></i></div>
+                        <div>
+                            <h4>Top Suggestion</h4>
+                            <h2>Pharmacy</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts and Insights Grid -->
+                <div class="dash-grid">
+                    <!-- Chart View -->
+                    <div class="chart-panel glass-card">
+                        <h4>Market Gap Index</h4>
+                        <div class="css-chart">
+                            <div class="chart-col">
+                                <div class="bar-fill blue-gradient-bg" style="height: 85%;"></div>
+                                <span>Health</span>
+                            </div>
+                            <div class="chart-col">
+                                <div class="bar-fill purple-gradient-bg" style="height: 35%;"></div>
+                                <span>Tech</span>
+                            </div>
+                            <div class="chart-col">
+                                <div class="bar-fill blue-gradient-bg" style="height: 60%;"></div>
+                                <span>Food</span>
+                            </div>
+                            <div class="chart-col">
+                                <div class="bar-fill purple-gradient-bg" style="height: 40%;"></div>
+                                <span>Retail</span>
+                            </div>
+                            <div class="chart-col">
+                                <div class="bar-fill blue-gradient-bg" style="height: 20%;"></div>
+                                <span>Gym</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. Insights Section -->
+                    <div class="insights-panel glass-card">
+                        <h4>💡 Smart Insights</h4>
+                        <ul class="insight-list">
+                            <li>
+                                <div class="insight-icon text-green"><i class="ph ph-check-circle"></i></div>
+                                <p><strong>Market Gap:</strong> Area has 5 cafes but <strong>no medical store</strong> nearby.</p>
+                            </li>
+                            <li>
+                                <div class="insight-icon text-blue"><i class="ph ph-trend-up"></i></div>
+                                <p><strong>High demand</strong> for daily essentials based on residential density.</p>
+                            </li>
+                            <li>
+                                <div class="insight-icon text-orange"><i class="ph ph-warning"></i></div>
+                                <p><strong>Saturation Warning:</strong> Avoid opening new coffee shops (High Competition).</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Business Recommendations Section -->
+    <section id="recommendations" class="container">
+        <div class="section-header">
+            <h2>Top <span class="text-gradient">Recommendations</span></h2>
+            <p>Based on our AI analysis for the selected area</p>
+        </div>
+
+        <div class="reco-grid">
+            <div class="reco-card glass-card hover-float">
+                <div class="reco-header">
+                    <div class="reco-icon blue-gradient-bg"><i class="ph ph-pill"></i></div>
+                    <div class="match-score">98% Match</div>
+                </div>
+                <h3>Start a Pharmacy</h3>
+                <p class="reco-desc">High residential area with 0 existing pharmacies within a 2-mile radius processing high search volume.</p>
+                <div class="tags">
+                    <span class="tag tag-green"><i class="ph ph-trend-up"></i> Demand: High</span>
+                    <span class="tag tag-blue"><i class="ph ph-shield-check"></i> Comp: Low</span>
+                </div>
+            </div>
+
+            <div class="reco-card glass-card hover-float">
+                <div class="reco-header">
+                    <div class="reco-icon green-gradient-bg"><i class="ph ph-shopping-cart"></i></div>
+                    <div class="match-score">85% Match</div>
+                </div>
+                <h3>Open a Grocery Store</h3>
+                <p class="reco-desc">Growing population but lacks a centralized supermarket for affordable fresh produce.</p>
+                <div class="tags">
+                    <span class="tag tag-green"><i class="ph ph-trend-up"></i> Demand: High</span>
+                    <span class="tag tag-orange"><i class="ph ph-scales"></i> Comp: Med</span>
+                </div>
+            </div>
+
+            <div class="reco-card glass-card hover-float">
+                <div class="reco-header">
+                    <div class="reco-icon purple-gradient-bg"><i class="ph ph-barbell"></i></div>
+                    <div class="match-score">72% Match</div>
+                </div>
+                <h3>Fitness Center</h3>
+                <p class="reco-desc">Rising trend in health awareness; nearest gym is over 5 miles away requiring long commutes.</p>
+                <div class="tags">
+                    <span class="tag tag-yellow"><i class="ph ph-trend-up"></i> Demand: Med</span>
+                    <span class="tag tag-blue"><i class="ph ph-shield-check"></i> Comp: Low</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <footer>
+        <div class="footer-container glass">
+            <div class="footer-top container">
+                <div class="brand-col">
+                    <div class="logo">
+                        <i class="ph ph-chart-polar"></i>
+                        <span>BizAnalyzer</span>
+                    </div>
+                    <p class="mt-1">Empowering entrepreneurs with data-driven insights for local business success.</p>
+                </div>
+                <div class="links-col">
+                    <h4>Platform</h4>
+                    <a href="#problem">The Gap</a>
+                    <a href="#analysis">Dashboard</a>
+                    <a href="#opportunity">How it Works</a>
+                </div>
+                <div class="links-col">
+                    <h4>Company</h4>
+                    <a href="#">About Project</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Smart Business Opportunity Analyzer. Final Year Project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sign In Modal (Pure CSS) -->
+    <div id="signin-modal" class="modal-overlay">
+        <div class="modal-content glass-card">
+            <a href="#" class="modal-close"><i class="ph ph-x"></i></a>
+            <h2>Welcome Back</h2>
+            <p>Sign in to your BizAnalyzer account</p>
+            <form class="signin-form mt-1">
+                <div class="input-group">
+                    <label>Email</label>
+                    <div class="input-wrapper">
+                        <i class="ph ph-envelope-simple"></i>
+                        <input type="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <div class="input-wrapper">
+                        <i class="ph ph-lock-key"></i>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary w-full mt-1">Sign In</button>
+            </form>
+            <p class="modal-footer">Don't have an account? <a href="#">Sign up</a></p>
         </div>
     </div>
 </body>
